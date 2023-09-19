@@ -1,0 +1,116 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+}
+.hero {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    max-height: 340px;
+    margin-bottom: 8%;
+    z-index: 10;
+}
+.hero-text{
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    line-height: 1rem;
+
+}
+#chart {
+    position: absolute;
+    background-color: white;
+    border-radius: 35px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    z-index: 30;
+    width: 40%;
+    height: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40%;
+
+}
+#counter{
+    z-index: 40;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0 1 auto;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 6%;
+
+}
+
+
+.pros-cons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 0 1 auto;
+    margin-top: 12%;
+}
+#prosCount{
+    color: #002c6f;
+    font-weight: 800;
+    font-size: 40px;
+}
+#consCount{
+    color: red;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+footer {
+    background-color: #002c6f;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+button{
+    background-color: #002c6f;
+    color: white;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 991px) {
+    html{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 1.5rem ;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    .pros-cons{
+        margin-top: 6%;
+    }
+    #chart{
+        height: 70%;
+    }
+    #counter{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:600px) {
+    #chart{
+        top:45%;
+    }
+    h1, h2{
+        white-space: nowrap;
+    }
+    .pros-cons{
+        top: 60%;
+    }
+    #counter{
+        font-size: 12px;
+    }
+    
+}

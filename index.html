@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pros & Cons Tool</title>
+    <link rel="stylesheet" href="css/site.css">
+    <meta name="description" content="A little tool to help with life's dificult decisions.">
+		
+    <meta property="og:url" content="">
+    <link rel="cononical" href="">
+
+    <meta property="og:title" content="Pros & Cons Tool">
+    <meta property="og:description" content="A little tool to help with life's difficult decisions.">
+
+    <meta property="og:image" content="img/metaImage.png">
+    <meta property="og:image:alt" content="A pros and cons pie chart">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <div class="hero">
+        <img class="hero" src="img/texture.png" aria-hidden="true"/>
+        <div class="hero-text">
+            <h1>Make a Decision</h1>
+            <h2>A pros and cons tool</h2>
+        </div>
+        <div id="chart">
+           <div id="counter">
+                <div>
+                    <p >
+                        Pros
+                    </p>
+                    <span id="prosCount">0</span>
+                </div>
+                <div>
+                     <p>
+                        Cons
+                    </p>
+                    <span id="consCount">0</span>
+
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <div class="pros-cons">
+        <div>
+            <form id="prosForm" action="" method="post">
+                <label for="prosInput">Pros: </label>
+                <div>
+                    <input id="prosInput" name="pros" type="text" required/>
+                    <button id="prosSubmit" for="prosInput" type="submit">ADD</button>
+                </div>
+            </form>
+            <ul id="prosList">
+              
+            </ul>
+        </div>
+        <div>
+            <form id="consForm" action="" method="post">
+                <label for="consInput">Cons: </label>
+                <div>
+                    <input id="consInput" name="con" type="text" required/>
+                    <button id="consSubmit" for="consInput" type="submit">ADD</button>
+                </div>
+            </form>
+            <ul id="consList">
+               
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <small>&copy; 2023 Leigh</small>
+    </footer>
+    <script src="js/app.js"> </script>
+    <script>
+        app.startUp();
+    </script>
+</body>
+</html>
